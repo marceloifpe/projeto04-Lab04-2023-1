@@ -1,4 +1,5 @@
-package stack;
+package list;
+import java.util.ArrayList;
 import array.ListaArray;
 
 public class PilhaNeto implements Pilha {

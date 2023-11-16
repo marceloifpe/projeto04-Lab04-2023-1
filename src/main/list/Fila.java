@@ -6,4 +6,5 @@ public interface Fila{
     public int	dequeue();
     public boolean isEmpty();
     public int	size();
+    public boolean isFull();
 }
