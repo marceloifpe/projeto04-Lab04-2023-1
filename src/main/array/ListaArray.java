@@ -1,16 +1,24 @@
 package array;
+import list.EstruturaElementar;
 
 /* Marcelo Augusto de Barros Araújo */
-import list.EstruturaElementar;
 
 public class ListaArray implements EstruturaElementar {
 
     private int[] array;
     private int indice_final;
 
+    public int size(){
+        return indice_final;
+    }
+
     public ListaArray() {
         array = new int[1];
         indice_final = 0;
+    }
+
+    public int ultimoElemento(){
+        return array[indice_final -1];
     }
 
     @Override
@@ -175,5 +183,19 @@ public class ListaArray implements EstruturaElementar {
     public void removeFim() {
         removeIndice(indice_final - 1);
     }
+
+    public boolean isEmpty() {
+        return false;
+    }
+
+    public int pop() {
+        return 0;
+    }
+
+    public void push(int pop) {
+    }
+    // public boolean isFull() {
+    //     return indice_final == array.length;
+    // }
 
 }

@@ -3,33 +3,35 @@ import java.util.ArrayList;
 import array.ListaArray;
 
 public class PilhaNeto implements Pilha {
-    private ListaArray listaArray;
-    private int indice;
+    ListaArray listaArray;
+    //private int indice;
 
-    public PilhaNeto(int capacidade) {
-        listaArray = new ListaArray(capacidade);
-        indice = -1;
+    public PilhaNeto() {
+        listaArray = new ListaArray();
+        //indice = -1;
     }
 
     @Override
     public boolean isEmpty() {
-        return indice == -1;
+        return listaArray.buscaIndice(0) == -1;
     }
 
     @Override
     public void push(int valor) {
         listaArray.insereInicio(valor);
-        indice++;
+        //indice++;
     }
 
     @Override
     public int pop() {
-        if (!isEmpty()) {
-            int valorRemovido = listaArray.array[indice];
-            indice--;
+       // if (!isEmpty()) {
+            int valorRemovido = listaArray.ultimoElemento();
+            //indice--;
+            listaArray.removeFim();
             return valorRemovido;
-        } else {
-            System.out.println("Está vazia");
-            return -1;
-        }
+       // } else {
+        //    System.out.println("Está vazia");
+        //    return -1;
+       // }
     }
+}

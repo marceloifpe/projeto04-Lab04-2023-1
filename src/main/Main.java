@@ -1,9 +1,13 @@
 import list.EstruturaElementar;
 import list.PilhaNeto;
+import list.FilaNeto;
+import list.Fila2;
 
 public class Main {
     public static void main(String[] args) {
-        PilhaNeto novaPilha = new PilhaNeto(5);
+
+        //teste01
+        PilhaNeto novaPilha = new PilhaNeto();
 
         novaPilha.push(1);
         novaPilha.push(2);
@@ -17,7 +21,9 @@ public class Main {
     
     }
 }
-//  FilaNeto minhaFila = new FilaNeto(5);
+
+//teste02
+//  FilaNeto minhaFila = new FilaNeto();
 
 //         System.out.println("Está vazia: " + minhaFila.isEmpty());
 
@@ -26,19 +32,30 @@ public class Main {
 //         minhaFila.enqueue(3);
 //         minhaFila.enqueue(4);
 
-//         System.out.println("Está cheia: " + minhaFila.isFull());
-
 //         System.out.println("Dequeue: " + minhaFila.dequeue());
 //         System.out.println("Dequeue: " + minhaFila.dequeue());
 
-//         minhaFila.enqueue(5);
-
-//         System.out.println("Está cheia: " + minhaFila.isFull());
+//         minhaFila.enqueue(3);
 
 //         while (!minhaFila.isEmpty()) {
 //             System.out.println("Dequeue: " + minhaFila.dequeue());
 //         }
 
 //         System.out.println("Está vazia: " + minhaFila.isEmpty());
+//     }
+// }
+
+//teste03
+// Fila2 filacompilha = new Fila2();
+
+// System.out.println("Está vazia: " + filacompilha.isEmpty());
+
+// filacompilha.enqueue(1);
+// filacompilha.enqueue(2);
+// filacompilha.enqueue(2);
+// filacompilha.enqueue(5);
+
+// System.out.println("Está vazia: " + filacompilha.isEmpty());
+// System.out.println("Tamanho: " + filacompilha.size());
 //     }
 // }
